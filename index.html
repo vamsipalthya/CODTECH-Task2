@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StoryWriting</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div id="app">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-left">
+          <button id="menuToggle" class="menu-toggle">
+            <i data-lucide=""></i>
+          </button>
+          <span class="logo">StoryWriting<span class="icon-1"><i data-lucide="pen"></i></span></span>
+        </div>
+
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search articles...">
+        </div>
+
+        <div class="nav-right">
+          <button id="writeBtn" class="write-btn">
+            <i data-lucide="pen-square"></i> 
+            
+          </button>
+          <button class="icon-btn">
+            <i data-lucide="bell"></i>
+          </button>
+          <button class="icon-btn">
+            <i data-lucide="user"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div id="blogEditor" class="blog-editor hidden">
+      <div class="editor-container">
+        <h2>Write Your Blog</h2>
+        <input type="text" id="titleInput" placeholder="Enter title..." class="blog-input">
+        <textarea id="contentInput" placeholder="Write your story..." class="blog-textarea"></textarea>
+        <div class="editor-actions">
+          <button id="publishBtn" class="btn-primary">Publish</button>
+          <button id="cancelBtn" class="btn-secondary">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <main class="main-content">
+      <div class="hero">
+        <div class="hero-content">
+          <h1>Welcome to StoryWriting</h1>
+          <p>Write your Story as your Wish.</p>
+          <div class="hero-buttons">
+            <button id="startWritingBtn" class="btn-primary">
+              <i data-lucide=""></i>
+              Start Writing
+            </button>
+            <button id="startReadingBtn" class="btn-secondary">
+              <i data-lucide=""></i>
+              Start Reading
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="blogList" class="blog-list"></div>
+    </main>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

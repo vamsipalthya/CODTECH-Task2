@@ -1,0 +1,166 @@
+:root {
+  --primary-color: #2563eb;
+  --primary-hover: #1d4ed8;
+  --bg-color: #f9fafb;
+  --text-color: #1f2937;
+  --text-light: #6b7280;
+  --border-color: #e5e7eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Navbar styles */
+.navbar {
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.nav-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Blog Editor styles */
+.blog-editor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.editor-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 90%;
+  max-width: 800px;
+}
+
+.blog-input {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 1rem 0;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.blog-textarea {
+  width: 100%;
+  height: 300px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  resize: vertical;
+}
+
+.editor-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+/* Blog List styles */
+.blog-list {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.blog-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.blog-card h2 {
+  margin-bottom: 1rem;
+}
+
+.blog-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Button styles */
+.btn-primary {
+  background: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background: var(--bg-color);
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.hero {
+  background: linear-gradient(to right, var(--primary-color), #4f46e5);
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-content {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #e5e7eb;
+  margin-bottom: 2rem;
+}
